@@ -1,0 +1,49 @@
+<html>
+<!-- <head>
+<script type="text/javascript" src="/js/autocomplete.js" ></script> -->
+<head>
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" /></link>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+  <script src='/js/script.js' type='text/javascript'></script>
+<script>
+$(function() {
+	$("#progressbar").progressbar({
+		value: {{progress}}
+	});
+	$( "#progressbarWrapper" ).resizable();
+});
+</script>
+<style>
+#continue {
+	z-index: 10000;
+	position: relative;
+	top: 10px;
+	left: 380px;
+}
+</style>
+
+</head>
+<body>
+	<div id='continue'>
+		<a href="{{next_url}}" class="proceeding"><h1 id='next'>NEXT ➔</h1></a>
+	</div>
+	
+	<div id='main_display2'>	
+		<img src='{{picture}}' id='img_display' {{dims}} />
+		<div id='answers'>
+			{{wrong}}
+			<h3 class='name_answer'> {{name}}  ✔ </h3>
+		</div>
+	</div>
+
+{{message}}
+
+<div id="progressbarWrapper" style="height:20px; width:200px;" class="ui-widget-default">
+	<div id="progressbar" style="height:100%;"></div>
+</div>
+
+</body>
+</html>
+

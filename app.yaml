@@ -1,0 +1,70 @@
+application: toddzickler
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: .home
+  script: example.py
+
+- url: .facedotcom
+  script: delete.py
+
+# - url: /(.*\.(bmp|gif|ico|jpeg|jpg|png))
+#   static_files: static/\1
+#   upload: static/(.*\.(bmp|gif|ico|jpeg|jpg|png))
+
+- url: /images/(.*)
+  static_files: static/images/\1
+  upload: static/images/(.*)
+
+# - url: /images
+#   static_files: static/images
+
+- url: .practice_test/([0-9]+)
+  script: practice.py
+
+- url: .practice_display/([0-9]+)
+  script: practice.py
+
+- url: .practice_record/([0-9]+)
+  script: practice.py
+
+- url: .clean_options
+  script: delete.py
+
+- url: .correct/[0-9]+
+  script: example.py
+
+- url: .pics
+  script: example.py
+
+- url: .pictures
+  script: example.py
+
+- url: .facebook
+  script: example.py
+
+- url: .delete
+  script: delete.py
+
+- url: .image
+  script: example.py
+  
+- url: .image2
+  script: example.py
+
+- url: .display/[0-9]+/[0-9]+
+  script: example.py
+
+- url: .test/[0-9]+
+  script: example.py
+
+- url: .record/[0-9]+
+  script: example.py
+
+- url: /js
+  static_dir: js
+
+- url: /stylesheets
+  static_dir: stylesheets

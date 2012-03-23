@@ -1,0 +1,499 @@
+Julia-Winns-MacBook-Pro:face2 juliawinn$ python face_api.py
+*** GET EXAMPLE WITH REMOTE URL ***
+{
+    "photos": [
+        {
+            "height": 540, 
+            "pid": "F@0f95689eaa76605fcac85f6553c60c67_06026296cc25ddc362274cb7ec99b679", 
+            "tags": [
+                {
+                    "attributes": {
+                        "face": {
+                            "confidence": 93, 
+                            "value": "true"
+                        }, 
+                        "gender": {
+                            "confidence": 96, 
+                            "value": "female"
+                        }, 
+                        "glasses": {
+                            "confidence": 78, 
+                            "value": "false"
+                        }, 
+                        "smiling": {
+                            "confidence": 86, 
+                            "value": "true"
+                        }
+                    }, 
+                    "center": {
+                        "x": 29.649999999999999, 
+                        "y": 29.91
+                    }, 
+                    "chin": null, 
+                    "confirmed": false, 
+                    "ear_left": null, 
+                    "ear_right": null, 
+                    "eye_left": {
+                        "x": 26.27, 
+                        "y": 27.760000000000002
+                    }, 
+                    "eye_right": {
+                        "x": 31.030000000000001, 
+                        "y": 25.359999999999999
+                    }, 
+                    "gid": null, 
+                    "height": 15, 
+                    "label": "", 
+                    "manual": false, 
+                    "mouth_center": {
+                        "x": 31.039999999999999, 
+                        "y": 33.329999999999998
+                    }, 
+                    "mouth_left": {
+                        "x": 29.120000000000001, 
+                        "y": 34.009999999999998
+                    }, 
+                    "mouth_right": {
+                        "x": 32.609999999999999, 
+                        "y": 32.109999999999999
+                    }, 
+                    "nose": {
+                        "x": 30.879999999999999, 
+                        "y": 30.539999999999999
+                    }, 
+                    "pitch": -4.1200000000000001, 
+                    "recognizable": true, 
+                    "roll": -20.699999999999999, 
+                    "tagger_id": null, 
+                    "threshold": null, 
+                    "tid": "TEMP_F@0f95689eaa76605fcac85f6553c60c67_06026296cc25ddc362274cb7ec99b679_29.65_29.91_0_0", 
+                    "uids": [], 
+                    "width": 11.25, 
+                    "yaw": 26.800000000000001
+                }, 
+                {
+                    "attributes": {
+                        "face": {
+                            "confidence": 95, 
+                            "value": "true"
+                        }, 
+                        "gender": {
+                            "confidence": 76, 
+                            "value": "female"
+                        }, 
+                        "glasses": {
+                            "confidence": 69, 
+                            "value": "false"
+                        }, 
+                        "smiling": {
+                            "confidence": 98, 
+                            "value": "true"
+                        }
+                    }, 
+                    "center": {
+                        "x": 41.530000000000001, 
+                        "y": 32.219999999999999
+                    }, 
+                    "chin": null, 
+                    "confirmed": false, 
+                    "ear_left": null, 
+                    "ear_right": null, 
+                    "eye_left": {
+                        "x": 40.369999999999997, 
+                        "y": 28.34
+                    }, 
+                    "eye_right": {
+                        "x": 44.549999999999997, 
+                        "y": 30.719999999999999
+                    }, 
+                    "gid": null, 
+                    "height": 12.59, 
+                    "label": "", 
+                    "manual": false, 
+                    "mouth_center": {
+                        "x": 40.289999999999999, 
+                        "y": 35.359999999999999
+                    }, 
+                    "mouth_left": {
+                        "x": 38.909999999999997, 
+                        "y": 33.880000000000003
+                    }, 
+                    "mouth_right": {
+                        "x": 42.509999999999998, 
+                        "y": 36.189999999999998
+                    }, 
+                    "nose": {
+                        "x": 40.549999999999997, 
+                        "y": 32.590000000000003
+                    }, 
+                    "pitch": -2.4900000000000002, 
+                    "recognizable": true, 
+                    "roll": 23.100000000000001, 
+                    "tagger_id": null, 
+                    "threshold": null, 
+                    "tid": "TEMP_F@0f95689eaa76605fcac85f6553c60c67_06026296cc25ddc362274cb7ec99b679_41.53_32.22_0_0", 
+                    "uids": [], 
+                    "width": 9.4399999999999995, 
+                    "yaw": -20.699999999999999
+                }, 
+                {
+                    "attributes": {
+                        "face": {
+                            "confidence": 96, 
+                            "value": "true"
+                        }, 
+                        "gender": {
+                            "confidence": 93, 
+                            "value": "female"
+                        }, 
+                        "glasses": {
+                            "confidence": 66, 
+                            "value": "false"
+                        }, 
+                        "smiling": {
+                            "confidence": 75, 
+                            "value": "true"
+                        }
+                    }, 
+                    "center": {
+                        "x": 54.579999999999998, 
+                        "y": 65
+                    }, 
+                    "chin": null, 
+                    "confirmed": false, 
+                    "ear_left": null, 
+                    "ear_right": null, 
+                    "eye_left": {
+                        "x": 51.57, 
+                        "y": 62.409999999999997
+                    }, 
+                    "eye_right": {
+                        "x": 56.450000000000003, 
+                        "y": 60.909999999999997
+                    }, 
+                    "gid": null, 
+                    "height": 14.07, 
+                    "label": "", 
+                    "manual": false, 
+                    "mouth_center": {
+                        "x": 55.119999999999997, 
+                        "y": 69.230000000000004
+                    }, 
+                    "mouth_left": {
+                        "x": 53.25, 
+                        "y": 68.709999999999994
+                    }, 
+                    "mouth_right": {
+                        "x": 57.590000000000003, 
+                        "y": 67.510000000000005
+                    }, 
+                    "nose": {
+                        "x": 54.170000000000002, 
+                        "y": 66.700000000000003
+                    }, 
+                    "pitch": -9.8000000000000007, 
+                    "recognizable": true, 
+                    "roll": -13.029999999999999, 
+                    "tagger_id": null, 
+                    "threshold": null, 
+                    "tid": "TEMP_F@0f95689eaa76605fcac85f6553c60c67_06026296cc25ddc362274cb7ec99b679_54.58_65.00_0_0", 
+                    "uids": [], 
+                    "width": 10.56, 
+                    "yaw": -13.789999999999999
+                }, 
+                {
+                    "attributes": {
+                        "face": {
+                            "confidence": 79, 
+                            "value": "true"
+                        }, 
+                        "gender": {
+                            "confidence": 83, 
+                            "value": "female"
+                        }, 
+                        "glasses": {
+                            "confidence": 99, 
+                            "value": "false"
+                        }, 
+                        "smiling": {
+                            "confidence": 82, 
+                            "value": "true"
+                        }
+                    }, 
+                    "center": {
+                        "x": 55.490000000000002, 
+                        "y": 28.43
+                    }, 
+                    "chin": null, 
+                    "confirmed": false, 
+                    "ear_left": null, 
+                    "ear_right": null, 
+                    "eye_left": {
+                        "x": 52.609999999999999, 
+                        "y": 25.059999999999999
+                    }, 
+                    "eye_right": {
+                        "x": 57.789999999999999, 
+                        "y": 24.620000000000001
+                    }, 
+                    "gid": null, 
+                    "height": 15.369999999999999, 
+                    "label": "", 
+                    "manual": false, 
+                    "mouth_center": {
+                        "x": 55.479999999999997, 
+                        "y": 33.189999999999998
+                    }, 
+                    "mouth_left": {
+                        "x": 53.390000000000001, 
+                        "y": 32.359999999999999
+                    }, 
+                    "mouth_right": {
+                        "x": 57.950000000000003, 
+                        "y": 31.949999999999999
+                    }, 
+                    "nose": {
+                        "x": 55.020000000000003, 
+                        "y": 30.379999999999999
+                    }, 
+                    "pitch": -10.27, 
+                    "recognizable": false, 
+                    "roll": -3.5899999999999999, 
+                    "tagger_id": null, 
+                    "threshold": null, 
+                    "tid": "TEMP_F@0f95689eaa76605fcac85f6553c60c67_06026296cc25ddc362274cb7ec99b679_55.49_28.43_0_0", 
+                    "uids": [], 
+                    "width": 11.529999999999999, 
+                    "yaw": -6.96
+                }, 
+                {
+                    "attributes": {
+                        "face": {
+                            "confidence": 98, 
+                            "value": "true"
+                        }, 
+                        "gender": {
+                            "confidence": 89, 
+                            "value": "female"
+                        }, 
+                        "glasses": {
+                            "confidence": 94, 
+                            "value": "false"
+                        }, 
+                        "smiling": {
+                            "confidence": 91, 
+                            "value": "true"
+                        }
+                    }, 
+                    "center": {
+                        "x": 68.129999999999995, 
+                        "y": 47.689999999999998
+                    }, 
+                    "chin": null, 
+                    "confirmed": false, 
+                    "ear_left": null, 
+                    "ear_right": null, 
+                    "eye_left": {
+                        "x": 65.439999999999998, 
+                        "y": 44.159999999999997
+                    }, 
+                    "eye_right": {
+                        "x": 70.439999999999998, 
+                        "y": 44.640000000000001
+                    }, 
+                    "gid": null, 
+                    "height": 13.52, 
+                    "label": "", 
+                    "manual": false, 
+                    "mouth_center": {
+                        "x": 67.310000000000002, 
+                        "y": 51.899999999999999
+                    }, 
+                    "mouth_left": {
+                        "x": 65.530000000000001, 
+                        "y": 50.520000000000003
+                    }, 
+                    "mouth_right": {
+                        "x": 70.120000000000005, 
+                        "y": 51.130000000000003
+                    }, 
+                    "nose": {
+                        "x": 66.840000000000003, 
+                        "y": 48.850000000000001
+                    }, 
+                    "pitch": -7.5999999999999996, 
+                    "recognizable": true, 
+                    "roll": 4.0800000000000001, 
+                    "tagger_id": null, 
+                    "threshold": null, 
+                    "tid": "TEMP_F@0f95689eaa76605fcac85f6553c60c67_06026296cc25ddc362274cb7ec99b679_68.13_47.69_0_0", 
+                    "uids": [], 
+                    "width": 10.140000000000001, 
+                    "yaw": -18.440000000000001
+                }, 
+                {
+                    "attributes": {
+                        "face": {
+                            "confidence": 99, 
+                            "value": "true"
+                        }, 
+                        "gender": {
+                            "confidence": 97, 
+                            "value": "male"
+                        }, 
+                        "glasses": {
+                            "confidence": 62, 
+                            "value": "false"
+                        }, 
+                        "smiling": {
+                            "confidence": 86, 
+                            "value": "false"
+                        }
+                    }, 
+                    "center": {
+                        "x": 69.239999999999995, 
+                        "y": 19.539999999999999
+                    }, 
+                    "chin": null, 
+                    "confirmed": false, 
+                    "ear_left": null, 
+                    "ear_right": null, 
+                    "eye_left": {
+                        "x": 66.939999999999998, 
+                        "y": 16.48
+                    }, 
+                    "eye_right": {
+                        "x": 71.409999999999997, 
+                        "y": 15.859999999999999
+                    }, 
+                    "gid": null, 
+                    "height": 14.26, 
+                    "label": "", 
+                    "manual": false, 
+                    "mouth_center": {
+                        "x": 69.569999999999993, 
+                        "y": 22.920000000000002
+                    }, 
+                    "mouth_left": {
+                        "x": 67.819999999999993, 
+                        "y": 23.27
+                    }, 
+                    "mouth_right": {
+                        "x": 71.049999999999997, 
+                        "y": 22.739999999999998
+                    }, 
+                    "nose": {
+                        "x": 69.569999999999993, 
+                        "y": 19.829999999999998
+                    }, 
+                    "pitch": 5.9500000000000002, 
+                    "recognizable": true, 
+                    "roll": -5.96, 
+                    "tagger_id": null, 
+                    "threshold": null, 
+                    "tid": "TEMP_F@0f95689eaa76605fcac85f6553c60c67_06026296cc25ddc362274cb7ec99b679_69.24_19.54_0_0", 
+                    "uids": [], 
+                    "width": 10.69, 
+                    "yaw": 7.4299999999999997
+                }
+            ], 
+            "url": "https://fbcdn-sphotos-a.akamaihd.net/hphotos-ak-snc6/250264_2274615427161_1301940984_32767138_6394896_n.jpg", 
+            "width": 720
+        }
+    ], 
+    "status": "success", 
+    "usage": {
+        "limit": 5000, 
+        "remaining": 4999, 
+        "reset_time": 1311953595, 
+        "reset_time_text": "Fri, 29 Jul 2011 15:33:15 +0000", 
+        "used": 1
+    }
+}
+Julia-Winns-MacBook-Pro:face2 juliawinn$ 
+{
+    "photos": [
+        {
+            "height": 540, 
+            "pid": "F@5e9d7686964fe9eff0f0229b857d8fc9_06026296cc25ddc362274cb7ec99b679", 
+            "tags": [
+                {
+                    "attributes": {
+                        "face": {
+                            "confidence": 73, 
+                            "value": "true"
+                        }, 
+                        "gender": {
+                            "confidence": 98, 
+                            "value": "female"
+                        }, 
+                        "glasses": {
+                            "confidence": 8, 
+                            "value": "false"
+                        }, 
+                        "smiling": {
+                            "confidence": 68, 
+                            "value": "true"
+                        }
+                    }, 
+                    "center": {
+                        "x": 68.260000000000005, 
+                        "y": 26.57
+                    }, 
+                    "chin": null, 
+                    "confirmed": false, 
+                    "ear_left": null, 
+                    "ear_right": null, 
+                    "eye_left": {
+                        "x": 64.170000000000002, 
+                        "y": 22.280000000000001
+                    }, 
+                    "eye_right": {
+                        "x": 70.810000000000002, 
+                        "y": 21.68
+                    }, 
+                    "gid": null, 
+                    "height": 19.440000000000001, 
+                    "label": "", 
+                    "manual": false, 
+                    "mouth_center": {
+                        "x": 68.650000000000006, 
+                        "y": 31.539999999999999
+                    }, 
+                    "mouth_left": {
+                        "x": 66.079999999999998, 
+                        "y": 31.280000000000001
+                    }, 
+                    "mouth_right": {
+                        "x": 71.879999999999995, 
+                        "y": 30.969999999999999
+                    }, 
+                    "nose": {
+                        "x": 67.069999999999993, 
+                        "y": 27.73
+                    }, 
+                    "pitch": 0.55000000000000004, 
+                    "recognizable": false, 
+                    "roll": -3.9100000000000001, 
+                    "tagger_id": null, 
+                    "threshold": null, 
+                    "tid": "TEMP_F@5e9d7686964fe9eff0f0229b857d8fc9_06026296cc25ddc362274cb7ec99b679_68.26_26.57_0_0", 
+                    "uids": [], 
+                    "width": 14.58, 
+                    "yaw": -17.25
+                }
+            ], 
+            "url": "https://fbcdn-sphotos-a.akamaihd.net/hphotos-ak-ash4/262277_10100112951476288_15720816_45641485_538387_n.jpg", 
+            "width": 720
+        }
+    ], 
+    "status": "success", 
+    "usage": {
+        "limit": 5000, 
+        "remaining": 4998, 
+        "reset_time": 1312226655, 
+        "reset_time_text": "Mon, 01 Aug 2011 19:24:15 +0000", 
+        "used": 2
+    }
+}
+

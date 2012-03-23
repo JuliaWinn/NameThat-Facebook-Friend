@@ -1,0 +1,61 @@
+<html>
+<!-- <head>
+<script type="text/javascript" src="/js/autocomplete.js" ></script> -->
+<head>
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" /></link>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+  <script src='/js/script.js' type='text/javascript'></script>
+  <script>
+  $(document).ready(function() {
+    $("input#autocomplete").autocomplete({
+    // source: ["c++", "java", "php", "coldfusion", "javascript", "asp", "ruby"]
+	source: [{{friend_list}}]
+	});
+  });
+  </script>
+<script type='text/javascript'>
+	function nameEmpty()
+	{
+		if (document.form.name.value == '' )
+		{
+			alert('You must first select the name of a friend before submitting!');
+			return false;
+		}
+	}
+</script>
+<script>
+	$(function() {
+		$( "#progressbar" ).progressbar({
+			value: {{progress}}
+		});
+	});
+</script>
+</head>
+<body>
+
+<div id='main_test'>
+	<div id='img_test'>
+	<h2 id='instruct_test'>NAME THAT FRIEND!</h2>
+	<img src='http://nalu.eecs.harvard.edu/J8vVD0kOuA0C0hQOYfWBjBdkfa31fd/pubfig_hash1/F/b22622f6cd5126dc52807aa919d0d9e8/15.jpg' height="100px" id="mystery_test"/>
+	<br />
+<form id='name_form' action='/record/{{number}}?friend={{friend_id}}' name='form' method='post' onSubmit='return nameEmpty();'>
+	<input id='autocomplete' type='text' id='name_input' name='name'/>
+	<h2 id='go_button'>GO!  <button id='go_button' name='submit' value='submit' type='submit' value='Submit'>
+		<img src='http://icons.iconarchive.com/icons/saki/nuoveXT-2/96/Actions-green-arrow-right-end-icon.png' id='green_arrow' width='35px'></button></h2>
+</form>
+
+<form id='no_idea_form' action='/record/{{number}}?friend={{friend_id}}' method='post'>
+	 <button type="submit" name='noidea' id="noidea" value="I have no idea"><img src='http://nalu.eecs.harvard.edu/J8vVD0kOuA0C0hQOYfWBjBdkfa31fd/uploads/conf_smiley.jpg' id='conf_smiley1' width='35px'></button><h2>I have no idea ... </h2>
+</form>
+</div>
+
+<div id='progressbar_contain'>
+<div id="progressbar"></div>
+</div>
+</body>
+</html>
+
+<!-- <a href="1?q=http://nalu.eecs.harvard.edu/J8vVD0kOuA0C0hQOYfWBjBdkfa31fd/pubfig_hash1/F/b22622f6cd5126dc52807aa919d0d9e8/15.jpg||http://nalu.eecs.harvard.edu/J8vVD0kOuA0C0hQOYfWBjBdkfa31fd/pubfig_hash2/F/846331e6955da7b13ffcd73807fa94c9/543.jpg" onmouseover="showA(&quot;846331e6955da7b13ffcd73807fa94c9&quot;, &quot;http://nalu.eecs.harvard.edu/J8vVD0kOuA0C0hQOYfWBjBdkfa31fd/pubfig_hash2/F/846331e6955da7b13ffcd73807fa94c9/543.jpg&quot;);" onmouseout="hideA(&quot;846331e6955da7b13ffcd73807fa94c9&quot;);" onclick="record(&quot;0&quot;,&quot;http://nalu.eecs.harvard.edu/J8vVD0kOuA0C0hQOYfWBjBdkfa31fd/pubfig_hash1/F/b22622f6cd5126dc52807aa919d0d9e8/15.jpg&quot;,&quot;http://nalu.eecs.harvard.edu/J8vVD0kOuA0C0hQOYfWBjBdkfa31fd/pubfig_hash2/F/846331e6955da7b13ffcd73807fa94c9/543.jpg&quot;);">
+	<img src="http://nalu.eecs.harvard.edu/J8vVD0kOuA0C0hQOYfWBjBdkfa31fd/pubfig_hash2/F/846331e6955da7b13ffcd73807fa94c9/543.jpg"></a> -->

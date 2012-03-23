@@ -1,0 +1,28 @@
+indexes:
+  
+- kind: Friend
+  ancestor: yes
+  properties:
+  - name: status
+  - name: order
+
+- kind: Original
+  ancestor: yes
+  properties:
+  - name: uid
+
+- kind: FBTags
+  ancestor: yes
+  properties:
+  - name: uid
+
+- kind: FaceTags
+  properties:
+  - name: url
+  - name: sum
+
+- kind: Photo
+  properties:
+  - name: uid
+  - name: order
+  

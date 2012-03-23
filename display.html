@@ -1,0 +1,41 @@
+<html>
+<!-- <head>
+<script type="text/javascript" src="/js/autocomplete.js" ></script> -->
+<head>
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" /></link>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+  <script src='/js/script.js' type='text/javascript'></script>
+<script>
+$(function() {
+	$("#progressbar").progressbar({
+		value: 37
+	});
+	$( "#progressbarWrapper" ).resizable();
+});
+</script>
+
+</head>
+<body>
+	<div id='continue{{wh}}'>
+		<a href="/test/{{number}}" class="proceeding"><h1 id='next'>NEXT ➔</h1></a>
+		<a href="/correct/{{number}}?uid={{uid}}" class="proceeding"><h3> ☹ That's not {{name}}! </h3></a>
+		<a href="/test/{{number}}" class="proceeding"><h3> ? I still don't know {{name}}... </h3></a>
+	</div>
+	
+	<div id='main_display'>	
+		<img src='{{picture}}' id='img_display' {{dims}} />
+		<div id='answers'>
+			{{wrong}}
+			<h3 class='name_answer'> {{name}}  ✔ </h3>
+		</div>
+	</div>
+
+	<div id="progressbarWrapper" style="height:20px; width:200px;" class="ui-widget-default">
+		<div id="progressbar" style="height:100%;"></div>
+	</div>
+	
+</body>
+</html>
+

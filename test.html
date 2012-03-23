@@ -1,0 +1,57 @@
+<html>
+<head>
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" /></link>
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+  <script src='/js/script.js' type='text/javascript'></script>
+  <script>
+  $(document).ready(function() {
+    $("input#autocomplete").autocomplete({
+    // source: ["c++", "java", "php", "coldfusion", "javascript", "asp", "ruby"]
+	source: [{{friend_list}}]
+	});
+  });
+  </script>
+<script type='text/javascript'>
+	function nameEmpty()
+	{
+		if ($('#name_form input[name=name]').val() == "")
+		{
+			$("#instruct").show();
+			this.timer=window.setTimeout("hide()", 1200);
+			return false;
+		}
+	}
+	function hide()
+	{
+		$("#instruct").hide();
+	}
+</script>
+</head>
+
+<div id='main_test'>
+	<div id='img_test'>
+	<h2 id='instruct_test'>NAME THAT FRIEND!</h2>
+	<img src='{{mystery}}' height="100px" id="mystery_test"/>
+	<br />
+</div>
+
+<form id='name_form' action='/record/{{number}}?friend={{friend_id}}' method='post' onSubmit='return nameEmpty();'>
+	<p id='instruct'>NO NAME GIVEN!</p>
+	<input id="name_submit" type='submit' value='GO ➔'>
+	<div class="fade-input">
+		<div class="input"><input id='autocomplete' type='text' class="fade-input" name='name'/></div>
+		<div class="fade-label">enter a friend's name</div>
+	</div>
+</form>
+
+<form id='no_idea_form' action='/record/{{number}}?friend={{friend_id}}' method='post'>
+	<input type="submit" name='noidea' id="no_idea_submit" value=" ? I have no idea..."/>
+</form>
+<!-- onfocus="value=''" -->
+
+</body>
+</html>
+
