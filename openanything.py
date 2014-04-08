@@ -14,8 +14,7 @@ __license__ = 'Python'
 import urllib2, urlparse, gzip
 from StringIO import StringIO
 
-#USER_AGENT = 'OpenAnything/%s +http://diveintopython.org/http_web_services/' % __version__
-#USER_AGENT = 'Facebook Project Test v. 0.1'
+
 USER_AGENT = 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.1.6) Gecko/20070725 Firefox/2.0.0.6'
 
 class SmartRedirectHandler(urllib2.HTTPRedirectHandler):

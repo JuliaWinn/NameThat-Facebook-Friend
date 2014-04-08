@@ -1,6 +1,4 @@
 <html>
-<!-- <head>
-<script type="text/javascript" src="/js/autocomplete.js" ></script> -->
 <head>
   <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
   <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" /></link>
@@ -11,7 +9,6 @@
   <script>
   $(document).ready(function() {
     $("input#autocomplete").autocomplete({
-    // source: ["c++", "java", "php", "coldfusion", "javascript", "asp", "ruby"]
 	source: [{{friend_list}}]
 	});
   });

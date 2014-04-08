@@ -23,27 +23,16 @@ FACEBOOK_APP_SECRET = ""
 # from load import *
 import facebook
 import os.path
-import wsgiref.handlers
-import pprint
-import urllib2
-import urllib
-import cgi
-import datetime
 import time
-import math
 import logging
 from google.appengine.runtime import DeadlineExceededError
 
-from django.utils import simplejson
-
 from face_api import FaceAPI
-from google.appengine.ext import db, blobstore
+from google.appengine.ext import db
 from google.appengine.ext import webapp
 from google.appengine.ext.webapp import util
 from google.appengine.ext.webapp import template
 from google.appengine.api import taskqueue
-from google.appengine.api import images
-from google.appengine.api import urlfetch
 
 ROUNDS = 10
 
@@ -499,10 +488,6 @@ class Correct(webapp.RequestHandler):
 						logging.debug("removed from users options list")
 		next_url = '/test/' + str(num)
 		self.redirect(next_url)
-		#maybe set out again to get more photos? argh complicated
-		#maybe make a list among the photos saying which user is authorized
-		#to see the list
-
 		
 
 

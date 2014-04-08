@@ -10,16 +10,9 @@ handlers:
 - url: .facedotcom
   script: delete.py
 
-# - url: /(.*\.(bmp|gif|ico|jpeg|jpg|png))
-#   static_files: static/\1
-#   upload: static/(.*\.(bmp|gif|ico|jpeg|jpg|png))
-
 - url: /images/(.*)
   static_files: static/images/\1
   upload: static/images/(.*)
-
-# - url: /images
-#   static_files: static/images
 
 - url: .practice_test/([0-9]+)
   script: practice.py
@@ -50,7 +43,7 @@ handlers:
 
 - url: .image
   script: example.py
-  
+
 - url: .image2
   script: example.py
 
